@@ -1,0 +1,268 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 1: Smart Light Controller"
+      ],
+      "metadata": {
+        "id": "fwM0NQOQwxFm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class SmartLight:\n",
+        "    def __init__(self, name):\n",
+        "        # Initialize light with a name\n",
+        "        self.name = name\n",
+        "        self.status = \"OFF\"  # Default status is OFF\n",
+        "\n",
+        "    def turn_on(self):\n",
+        "        # Turn the light ON\n",
+        "        self.status = \"ON\"\n",
+        "\n",
+        "    def turn_off(self):\n",
+        "        # Turn the light OFF\n",
+        "        self.status = \"OFF\"\n",
+        "\n",
+        "    def display_status(self):\n",
+        "        # Display current status of the light\n",
+        "        print(f\"{self.name} is {self.status}\")\n",
+        "\n",
+        "# Sample Input\n",
+        "light = SmartLight(\"Bedroom Light\")\n",
+        "light.turn_on()\n",
+        "light.display_status()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mo4E-UjHwNvd",
+        "outputId": "5b0f5514-e510-4777-c1cb-f5665c4906d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bedroom Light is ON\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 2: Employee ID Card System"
+      ],
+      "metadata": {
+        "id": "uqTGxESPwkp1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Class to manage employee ID card details\n",
+        "class Employee:\n",
+        "    def __init__(self, name, emp_id, department):\n",
+        "        # Initialize employee details\n",
+        "        self.name = name\n",
+        "        self.emp_id = emp_id\n",
+        "        self.department = department\n",
+        "\n",
+        "    def display_id_card(self):\n",
+        "        # Display employee ID card information\n",
+        "        print(\"Employee ID Card\")\n",
+        "        print(f\"Name: {self.name}\")\n",
+        "        print(f\"ID: {self.emp_id}\")\n",
+        "        print(f\"Department: {self.department}\")\n",
+        "\n",
+        "# Sample Input\n",
+        "employee = Employee(\"Rajeshwari\", \"EMP710\", \"DS\")\n",
+        "employee.display_id_card()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z0AWke5Owmc7",
+        "outputId": "09e6549a-8d8e-4344-a90f-e6a10da1b3c5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Employee ID Card\n",
+            "Name: Rajeshwari\n",
+            "ID: EMP710\n",
+            "Department: DS\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 3: Mobile Contact Record"
+      ],
+      "metadata": {
+        "id": "1OVVxQKHxIZi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Class to store mobile contact information\n",
+        "class Contact:\n",
+        "    def __init__(self, name, phone_number):\n",
+        "        # Initialize contact details\n",
+        "        self.name = name\n",
+        "        self.phone_number = phone_number\n",
+        "\n",
+        "    def display_contact(self):\n",
+        "        # Display saved contact information\n",
+        "        print(\"Contact Saved\")\n",
+        "        print(f\"Name: {self.name}\")\n",
+        "        print(f\"Phone: {self.phone_number}\")\n",
+        "\n",
+        "# Sample Input\n",
+        "contact = Contact(\"Anusha\", \"9878146291\")\n",
+        "contact.display_contact()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pcfNyLZKxUXs",
+        "outputId": "c92de7c4-4327-4ec6-fc1a-cf4eb7335f9d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Contact Saved\n",
+            "Name: Anusha\n",
+            "Phone: 9878146291\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 4: Product Price Tag Generator"
+      ],
+      "metadata": {
+        "id": "kr0IqUFqxrHK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Class to store and display movie ratings\n",
+        "class Movie:\n",
+        "    def __init__(self, name, rating):\n",
+        "        # Initialize movie details\n",
+        "        self.name = name\n",
+        "        self.rating = rating\n",
+        "\n",
+        "    def display_details(self):\n",
+        "        # Display movie name and rating\n",
+        "        print(f\"Movie: {self.name}\")\n",
+        "        print(f\"Rating: {self.rating} / 5\")\n",
+        "\n",
+        "# Sample Input\n",
+        "movie = Movie(\"HIT3\", 4.9)\n",
+        "movie.display_details()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZDAFNIRyxtAP",
+        "outputId": "04c76d8c-4df1-4109-e511-0de4fa26614d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Movie: HIT3\n",
+            "Rating: 4.9 / 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 6: Delivery Address Manager"
+      ],
+      "metadata": {
+        "id": "gi8f0W-5yD9v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Class to manage delivery address details\n",
+        "class Delivery:\n",
+        "    def __init__(self, customer_name, address):\n",
+        "        # Initialize delivery details\n",
+        "        self.customer_name = customer_name\n",
+        "        self.address = address\n",
+        "\n",
+        "    def display_delivery_details(self):\n",
+        "        # Display delivery information\n",
+        "        print(\"Delivery Details\")\n",
+        "        print(f\"Customer: {self.customer_name}\")\n",
+        "        print(f\"Address: {self.address}\")\n",
+        "\n",
+        "# Sample Input\n",
+        "delivery = Delivery(\"Raji\", \"Hyderabad\")\n",
+        "delivery.display_delivery_details()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SZr3Um-LyFWR",
+        "outputId": "6fdf7d77-a50e-419d-e74f-206220f8a335"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Delivery Details\n",
+            "Customer: Raji\n",
+            "Address: Hyderabad\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
